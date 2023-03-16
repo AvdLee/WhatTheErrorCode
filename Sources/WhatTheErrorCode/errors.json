@@ -1,0 +1,192 @@
+[{
+    "key": "NSCocoaErrorDomain",
+    "errors": [{
+            "key": "NSManagedObjectValidationError",
+            "code": 1550,
+            "description": "generic validation error"
+        }, {
+            "key": "NSValidationMultipleErrorsError",
+            "code": 1560,
+            "description": "generic message for error containing multiple validation errors"
+        }, {
+            "key": "NSValidationMissingMandatoryPropertyError",
+            "code": 1570,
+            "description": "non-optional property with a nil value"
+        }, {
+            "key": "NSValidationRelationshipLacksMinimumCountError",
+            "code": 1580,
+            "description": "to-many relationship with too few destination objects"
+        }, {
+            "key": "NSValidationRelationshipExceedsMaximumCountError",
+            "code": 1590,
+            "description": "bounded, to-many relationship with too many destination objects"
+        }, {
+            "key": "NSValidationRelationshipDeniedDeleteError",
+            "code": 1600,
+            "description": "some relationship with NSDeleteRuleDeny is non-empty"
+        }, {
+            "key": "NSValidationNumberTooLargeError",
+            "code": 1610,
+            "description": "some numerical value is too large"
+        }, {
+            "key": "NSValidationNumberTooSmallError",
+            "code": 1620,
+            "description": "some numerical value is too small"
+        }, {
+            "key": "NSValidationDateTooLateError",
+            "code": 1630,
+            "description": "some date value is too late"
+        }, {
+            "key": "NSValidationDateTooSoonError",
+            "code": 1640,
+            "description": "some date value is too soon"
+        },
+        {
+            "key": "NSValidationInvalidDateError",
+            "code": 1650,
+            "description": "some date value fails to match date pattern"
+        },
+        {
+            "key": "NSValidationStringTooLongError",
+            "code": 1660,
+            "description": "some string value is too long"
+        },
+        {
+            "key": "NSValidationStringTooShortError",
+            "code": 1670,
+            "description": "some string value is too short"
+        },
+        {
+            "key": "NSValidationStringPatternMatchingError",
+            "code": 1680,
+            "description": "some string value fails to match some pattern"
+        },
+        {
+            "key": "NSManagedObjectContextLockingError",
+            "code": 132000,
+            "description": "can't acquire a lock in a managed object context"
+        },
+        {
+            "key": "NSPersistentStoreCoordinatorLockingError",
+            "code": 132010,
+            "description": "can't acquire a lock in a persistent store coordinator"
+        },
+        {
+            "key": "NSManagedObjectReferentialIntegrityError",
+            "code": 133000,
+            "description": "attempt to fire a fault pointing to an object that does not exist (we can see the store, we can't see the object)"
+        },
+        {
+            "key": "NSManagedObjectExternalRelationshipError",
+            "code": 133010,
+            "description": "an object being saved has a relationship containing an object from another store"
+        },
+        {
+            "key": "NSManagedObjectMergeError",
+            "code": 133020,
+            "description": "merge policy failed - unable to complete merging"
+        },
+        {
+            "key": "NSPersistentStoreInvalidTypeError",
+            "code": 134000,
+            "description": "unknown persistent store type/format/version"
+        },
+        {
+            "key": "NSPersistentStoreTypeMismatchError",
+            "code": 134010,
+            "description": "returned by persistent store coordinator if a store is accessed that does not match the specified type"
+        },
+        {
+            "key": "NSPersistentStoreIncompatibleSchemaError",
+            "code": 134020,
+            "description": "store returned an error for save operation (database level errors ie missing table, no permissions)"
+        },
+        {
+            "key": "NSPersistentStoreSaveError",
+            "code": 134030,
+            "description": "unclassified save error - something we depend on returned an error"
+        },
+        {
+            "key": "NSPersistentStoreIncompleteSaveError",
+            "code": 134040,
+            "description": "one or more of the stores returned an error during save (stores/objects that failed will be in userInfo)"
+        },
+        {
+            "key": "NSPersistentStoreSaveConflictsError",
+            "code": 134050,
+            "description": "an unresolved merge conflict was encountered during a save.  userInfo has NSPersistentStoreSaveConflictsErrorKey"
+        },
+        {
+            "key": "NSCoreDataError",
+            "code": 134060,
+            "description": "general Core Data error"
+        },
+        {
+            "key": "NSPersistentStoreOperationError",
+            "code": 134070,
+            "description": "the persistent store operation failed"
+        },
+        {
+            "key": "NSPersistentStoreOpenError",
+            "code": 134080,
+            "description": "an error occurred while attempting to open the persistent store"
+        },
+        {
+            "key": "NSPersistentStoreTimeoutError",
+            "code": 134090,
+            "description": "failed to connect to the persistent store within the specified timeout (see NSPersistentStoreTimeoutOption)"
+        }, {
+            "key": "NSPersistentStoreUnsupportedRequestTypeError",
+            "code": 134091,
+            "description": "an NSPersistentStore subclass was passed an NSPersistentStoreRequest that it did not understand"
+        }, {
+            "key": "NSPersistentStoreIncompatibleVersionHashError",
+            "code": 134100,
+            "description": "entity version hashes incompatible with data model"
+        }, {
+            "key": "NSMigrationError",
+            "code": 134110,
+            "description": "general migration error"
+        }, {
+            "key": "NSMigrationCancelledError",
+            "code": 134120,
+            "description": "migration failed due to manual cancellation"
+        }, {
+            "key": "NSMigrationMissingSourceModelError",
+            "code": 134130,
+            "description": "migration failed due to missing source data model"
+        }, {
+            "key": "NSMigrationMissingMappingModelError",
+            "code": 134140,
+            "description": "migration failed due to missing mapping model"
+        }, {
+            "key": "NSMigrationManagerSourceStoreError",
+            "code": 134150,
+            "description": "migration failed due to a problem with the source data store"
+        }, {
+            "key": "NSMigrationManagerDestinationStoreError",
+            "code": 134160,
+            "description": "migration failed due to a problem with the destination data store"
+        }, {
+            "key": "NSEntityMigrationPolicyError",
+            "code": 134170,
+            "description": "migration failed during processing of the entity migration policy"
+        }, {
+            "key": "NSSQLiteError",
+            "code": 134180,
+            "description": "general SQLite error"
+        }, {
+            "key": "NSInferredMappingModelError",
+            "code": 134190,
+            "description": "inferred mapping model creation error"
+        }, {
+            "key": "NSExternalRecordImportError",
+            "code": 134200,
+            "description": "general error encountered while importing external records"
+        }, {
+            "key": "NSPersistentHistoryTokenExpiredError",
+            "code": 134301,
+            "description": "The history token passed to NSPersistentChangeRequest was invalid"
+        }
+    ]
+}]
