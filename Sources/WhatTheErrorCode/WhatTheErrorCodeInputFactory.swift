@@ -9,7 +9,7 @@ import Foundation
 
 struct WhatTheErrorCodeInput {
     let code: Int
-    let domain: String
+    let domain: String?
 }
 
 struct WhatTheErrorCodeInputFactory {
@@ -17,19 +17,30 @@ struct WhatTheErrorCodeInputFactory {
 
     func make() -> WhatTheErrorCodeInput? {
         let rawValue = rawValue.lowercased()
-        let pattern = #"domain=([^\s]+).*code=(-?\d+)"#
+        let pattern = #"(?:domain=([^\s]+)\s+)?code=(-?\d+)"#
         let regex = try! NSRegularExpression(pattern: pattern)
 
-        guard let result = regex.firstMatch(in: rawValue, options: [], range: NSRange(location: 0, length: rawValue.count)) else { return nil }
+        guard let result = regex.firstMatch(in: rawValue, options: [], range: NSRange(location: 0, length: rawValue.count)) else {
+            if let errorCode = Int(rawValue) {
+                /// For code only inputs.
+                return WhatTheErrorCodeInput(code: errorCode, domain: nil)
+            }
 
-        guard
-            let domainRange = Range(result.range(at: 1), in: rawValue),
-            let errorCodeRange = Range(result.range(at: 2), in: rawValue) else {
             return nil
         }
 
-        let domain = String(rawValue[domainRange])
-        guard let errorCode = Int(rawValue[errorCodeRange]) else { return nil }
+        guard
+            let errorCodeRange = Range(result.range(at: 2), in: rawValue),
+            let errorCode = Int(rawValue[errorCodeRange])
+        else {
+            return nil
+        }
+
+        var domain: String?
+
+        if let domainRange = Range(result.range(at: 1), in: rawValue) {
+            domain = String(rawValue[domainRange])
+        }
 
         return WhatTheErrorCodeInput(code: errorCode, domain: domain)
     }

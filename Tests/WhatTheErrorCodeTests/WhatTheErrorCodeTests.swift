@@ -2,6 +2,30 @@ import XCTest
 @testable import WhatTheErrorCode
 
 final class WhatTheErrorCodeTests: XCTestCase {
+    func testCodeWithKeyOnlyInput() throws {
+        let expectedError = CocoaErrorDescription(
+            code: 1590,
+            key: "NSValidationRelationshipExceedsMaximumCountError",
+            description: "bounded, to-many relationship with too many destination objects"
+        )
+        XCTAssertEqual(
+            WhatTheErrorCode.description(for: "code=1590"),
+            expectedError
+        )
+    }
+
+    func testCodeOnlyInput() throws {
+        let expectedError = CocoaErrorDescription(
+            code: 1590,
+            key: "NSValidationRelationshipExceedsMaximumCountError",
+            description: "bounded, to-many relationship with too many destination objects"
+        )
+        XCTAssertEqual(
+            WhatTheErrorCode.description(for: "1590"),
+            expectedError
+        )
+    }
+
     func testCoreDataExample() throws {
         let expectedError = CocoaErrorDescription(
             code: 1590,
