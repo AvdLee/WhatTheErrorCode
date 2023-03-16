@@ -10,7 +10,7 @@ final class WhatTheErrorCodeTests: XCTestCase {
         )
         XCTAssertEqual(
             WhatTheErrorCode.description(for: "code=1590"),
-            expectedError
+            [expectedError]
         )
     }
 
@@ -22,7 +22,7 @@ final class WhatTheErrorCodeTests: XCTestCase {
         )
         XCTAssertEqual(
             WhatTheErrorCode.description(for: "1590"),
-            expectedError
+            [expectedError]
         )
     }
 
@@ -34,7 +34,7 @@ final class WhatTheErrorCodeTests: XCTestCase {
         )
         XCTAssertEqual(
             WhatTheErrorCode.description(for: "Domain=NSCocoaErrorDomain Code=1590 \"The operation couldn't be completed. (Cocoa error 1590.)"),
-            expectedError
+            [expectedError]
         )
     }
 
@@ -46,7 +46,7 @@ final class WhatTheErrorCodeTests: XCTestCase {
         )
         XCTAssertEqual(
             WhatTheErrorCode.description(for: "domain=nscocoaerrordomain code=1590 \"The operation couldn't be completed. (Cocoa error 1590.)"),
-            expectedError
+            [expectedError]
         )
     }
 
@@ -60,7 +60,7 @@ final class WhatTheErrorCodeTests: XCTestCase {
             WhatTheErrorCode.description(for: """
             Error Domain=NSURLErrorDomain Code=-1020 "De momento, não é permitida a transmissão de dados." UserInfo={_kCFStreamErrorCodeKey=50
             """),
-            expectedError
+            [expectedError]
         )
     }
 

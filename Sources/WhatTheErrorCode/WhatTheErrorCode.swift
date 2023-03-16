@@ -25,25 +25,25 @@ public struct WhatTheErrorCode {
         return errorDomains
     }()
 
-    public static func description(for input: String) -> CocoaErrorDescription? {
+    public static func description(for input: String) -> [CocoaErrorDescription] {
         guard let input = WhatTheErrorCodeInputFactory(rawValue: input).make() else {
-            return nil
+            return []
         }
         print("Input is \(input)")
 
-        return errorDomains.error(for: input)
+        return errorDomains.errors(for: input)
     }
 }
 
 extension [CocoaErrorDomain] {
-    func error(for input: WhatTheErrorCodeInput) -> CocoaErrorDescription? {
+    func errors(for input: WhatTheErrorCodeInput) -> [CocoaErrorDescription] {
         if let domain = input.domain {
             return first(where: { $0.key.lowercased() == domain.lowercased() })?
                 .errors
-                .first(where: { $0.code == input.code })
+                .filter { $0.code == input.code } ?? []
         } else {
             return flatMap(\.errors)
-                .first(where: { $0.code == input.code })
+                .filter { $0.code == input.code }
         }
     }
 }
