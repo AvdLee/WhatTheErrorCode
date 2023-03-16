@@ -55,10 +55,6 @@ public struct WhatTheErrorCodeInputView: View {
     }
 
     private func updateResult() {
-        guard let error = WhatTheErrorCode.description(for: input) else {
-            result.removeAll()
-            return
-        }
-        result = [error]
+        result = WhatTheErrorCode.description(for: input)
     }
 }
