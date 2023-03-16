@@ -10,28 +10,8 @@
 		844E8A5329C383E3008C5AC8 /* WhatTheErrorCodeExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E8A5229C383E3008C5AC8 /* WhatTheErrorCodeExampleApp.swift */; };
 		844E8A5729C383E3008C5AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844E8A5629C383E3008C5AC8 /* Assets.xcassets */; };
 		844E8A5B29C383E3008C5AC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844E8A5A29C383E3008C5AC8 /* Preview Assets.xcassets */; };
-		844E8A6529C383E4008C5AC8 /* WhatTheErrorCodeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E8A6429C383E4008C5AC8 /* WhatTheErrorCodeExampleTests.swift */; };
-		844E8A6F29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E8A6E29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests.swift */; };
-		844E8A7129C383E4008C5AC8 /* WhatTheErrorCodeExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E8A7029C383E4008C5AC8 /* WhatTheErrorCodeExampleUITestsLaunchTests.swift */; };
 		8475826529C38DDA00682924 /* WhatTheErrorCode in Frameworks */ = {isa = PBXBuildFile; productRef = 8475826429C38DDA00682924 /* WhatTheErrorCode */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		844E8A6129C383E4008C5AC8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 844E8A4729C383E3008C5AC8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 844E8A4E29C383E3008C5AC8;
-			remoteInfo = WhatTheErrorCodeExample;
-		};
-		844E8A6B29C383E4008C5AC8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 844E8A4729C383E3008C5AC8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 844E8A4E29C383E3008C5AC8;
-			remoteInfo = WhatTheErrorCodeExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		844E8A4F29C383E3008C5AC8 /* WhatTheErrorCodeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatTheErrorCodeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,11 +19,6 @@
 		844E8A5629C383E3008C5AC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844E8A5829C383E3008C5AC8 /* WhatTheErrorCodeExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatTheErrorCodeExample.entitlements; sourceTree = "<group>"; };
 		844E8A5A29C383E3008C5AC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		844E8A6029C383E4008C5AC8 /* WhatTheErrorCodeExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatTheErrorCodeExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		844E8A6429C383E4008C5AC8 /* WhatTheErrorCodeExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheErrorCodeExampleTests.swift; sourceTree = "<group>"; };
-		844E8A6A29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatTheErrorCodeExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		844E8A6E29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheErrorCodeExampleUITests.swift; sourceTree = "<group>"; };
-		844E8A7029C383E4008C5AC8 /* WhatTheErrorCodeExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheErrorCodeExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8475826229C38DCE00682924 /* WhatTheErrorCode */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WhatTheErrorCode; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,20 +31,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		844E8A5D29C383E4008C5AC8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		844E8A6729C383E4008C5AC8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,8 +39,6 @@
 			children = (
 				8475826229C38DCE00682924 /* WhatTheErrorCode */,
 				844E8A5129C383E3008C5AC8 /* WhatTheErrorCodeExample */,
-				844E8A6329C383E4008C5AC8 /* WhatTheErrorCodeExampleTests */,
-				844E8A6D29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests */,
 				844E8A5029C383E3008C5AC8 /* Products */,
 				8475826329C38DDA00682924 /* Frameworks */,
 			);
@@ -89,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				844E8A4F29C383E3008C5AC8 /* WhatTheErrorCodeExample.app */,
-				844E8A6029C383E4008C5AC8 /* WhatTheErrorCodeExampleTests.xctest */,
-				844E8A6A29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,23 +69,6 @@
 				844E8A5A29C383E3008C5AC8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		844E8A6329C383E4008C5AC8 /* WhatTheErrorCodeExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				844E8A6429C383E4008C5AC8 /* WhatTheErrorCodeExampleTests.swift */,
-			);
-			path = WhatTheErrorCodeExampleTests;
-			sourceTree = "<group>";
-		};
-		844E8A6D29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				844E8A6E29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests.swift */,
-				844E8A7029C383E4008C5AC8 /* WhatTheErrorCodeExampleUITestsLaunchTests.swift */,
-			);
-			path = WhatTheErrorCodeExampleUITests;
 			sourceTree = "<group>";
 		};
 		8475826329C38DDA00682924 /* Frameworks */ = {
@@ -161,42 +101,6 @@
 			productReference = 844E8A4F29C383E3008C5AC8 /* WhatTheErrorCodeExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		844E8A5F29C383E4008C5AC8 /* WhatTheErrorCodeExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 844E8A7729C383E4008C5AC8 /* Build configuration list for PBXNativeTarget "WhatTheErrorCodeExampleTests" */;
-			buildPhases = (
-				844E8A5C29C383E4008C5AC8 /* Sources */,
-				844E8A5D29C383E4008C5AC8 /* Frameworks */,
-				844E8A5E29C383E4008C5AC8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				844E8A6229C383E4008C5AC8 /* PBXTargetDependency */,
-			);
-			name = WhatTheErrorCodeExampleTests;
-			productName = WhatTheErrorCodeExampleTests;
-			productReference = 844E8A6029C383E4008C5AC8 /* WhatTheErrorCodeExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		844E8A6929C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 844E8A7A29C383E4008C5AC8 /* Build configuration list for PBXNativeTarget "WhatTheErrorCodeExampleUITests" */;
-			buildPhases = (
-				844E8A6629C383E4008C5AC8 /* Sources */,
-				844E8A6729C383E4008C5AC8 /* Frameworks */,
-				844E8A6829C383E4008C5AC8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				844E8A6C29C383E4008C5AC8 /* PBXTargetDependency */,
-			);
-			name = WhatTheErrorCodeExampleUITests;
-			productName = WhatTheErrorCodeExampleUITests;
-			productReference = 844E8A6A29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,14 +113,6 @@
 				TargetAttributes = {
 					844E8A4E29C383E3008C5AC8 = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					844E8A5F29C383E4008C5AC8 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 844E8A4E29C383E3008C5AC8;
-					};
-					844E8A6929C383E4008C5AC8 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 844E8A4E29C383E3008C5AC8;
 					};
 				};
 			};
@@ -234,8 +130,6 @@
 			projectRoot = "";
 			targets = (
 				844E8A4E29C383E3008C5AC8 /* WhatTheErrorCodeExample */,
-				844E8A5F29C383E4008C5AC8 /* WhatTheErrorCodeExampleTests */,
-				844E8A6929C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,20 +144,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		844E8A5E29C383E4008C5AC8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		844E8A6829C383E4008C5AC8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -275,37 +155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		844E8A5C29C383E4008C5AC8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				844E8A6529C383E4008C5AC8 /* WhatTheErrorCodeExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		844E8A6629C383E4008C5AC8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				844E8A6F29C383E4008C5AC8 /* WhatTheErrorCodeExampleUITests.swift in Sources */,
-				844E8A7129C383E4008C5AC8 /* WhatTheErrorCodeExampleUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		844E8A6229C383E4008C5AC8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 844E8A4E29C383E3008C5AC8 /* WhatTheErrorCodeExample */;
-			targetProxy = 844E8A6129C383E4008C5AC8 /* PBXContainerItemProxy */;
-		};
-		844E8A6C29C383E4008C5AC8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 844E8A4E29C383E3008C5AC8 /* WhatTheErrorCodeExample */;
-			targetProxy = 844E8A6B29C383E4008C5AC8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		844E8A7229C383E4008C5AC8 /* Debug */ = {
@@ -493,96 +343,6 @@
 			};
 			name = Release;
 		};
-		844E8A7829C383E4008C5AC8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4QMDKC8VLJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftlee.WhatTheErrorCodeExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatTheErrorCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhatTheErrorCodeExample";
-			};
-			name = Debug;
-		};
-		844E8A7929C383E4008C5AC8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4QMDKC8VLJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftlee.WhatTheErrorCodeExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatTheErrorCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhatTheErrorCodeExample";
-			};
-			name = Release;
-		};
-		844E8A7B29C383E4008C5AC8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4QMDKC8VLJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftlee.WhatTheErrorCodeExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WhatTheErrorCodeExample;
-			};
-			name = Debug;
-		};
-		844E8A7C29C383E4008C5AC8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4QMDKC8VLJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftlee.WhatTheErrorCodeExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WhatTheErrorCodeExample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -600,24 +360,6 @@
 			buildConfigurations = (
 				844E8A7529C383E4008C5AC8 /* Debug */,
 				844E8A7629C383E4008C5AC8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		844E8A7729C383E4008C5AC8 /* Build configuration list for PBXNativeTarget "WhatTheErrorCodeExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				844E8A7829C383E4008C5AC8 /* Debug */,
-				844E8A7929C383E4008C5AC8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		844E8A7A29C383E4008C5AC8 /* Build configuration list for PBXNativeTarget "WhatTheErrorCodeExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				844E8A7B29C383E4008C5AC8 /* Debug */,
-				844E8A7C29C383E4008C5AC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
