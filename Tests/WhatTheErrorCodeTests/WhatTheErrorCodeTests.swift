@@ -14,6 +14,18 @@ final class WhatTheErrorCodeTests: XCTestCase {
         )
     }
 
+    func testLowercaseExample() throws {
+        let expectedError = CocoaErrorDescription(
+            code: 1590,
+            key: "NSValidationRelationshipExceedsMaximumCountError",
+            description: "bounded, to-many relationship with too many destination objects"
+        )
+        XCTAssertEqual(
+            WhatTheErrorCode.description(for: "domain=nscocoaerrordomain code=1590 \"The operation couldn't be completed. (Cocoa error 1590.)"),
+            expectedError
+        )
+    }
+
     func testNSURLErrorDomainExample() throws {
         let expectedError = CocoaErrorDescription(
             code: -1020,
