@@ -10,6 +10,10 @@ And you have no clue what the code means? Use this app to find a description:
 
 ![](Assets/app_example.jpg)
 
+## Supported error domains
+- [x] `NSCocoaErrorDomain`
+- [ ] `NSURLErrorDomain`
+
 ## Can I help contribute?
 Yes, please! Feel free to open a PR and add new error descriptions to [this JSON file](Sources/WhatTheErrorCode/errors.json).
 
