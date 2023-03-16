@@ -37,7 +37,7 @@ public struct WhatTheErrorCode {
 
 extension [CocoaErrorDomain] {
     func error(for input: WhatTheErrorCodeInput) -> CocoaErrorDescription? {
-        first(where: { $0.key == input.domain })?
+        first(where: { $0.key.lowercased() == input.domain.lowercased() })?
             .errors
             .first(where: { $0.code == input.code })
     }
