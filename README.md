@@ -12,7 +12,7 @@ And you have no clue what the code means? Use this app to find a description:
 
 ## Supported error domains
 - [x] `NSCocoaErrorDomain`
-- [ ] `NSURLErrorDomain`
+- [x] `NSURLErrorDomain`
 
 ## Can I help contribute?
 Yes, please! Feel free to open a PR and add new error descriptions to [this JSON file](Sources/WhatTheErrorCode/errors.json).

@@ -16,19 +16,21 @@ struct WhatTheErrorCodeInputFactory {
     let rawValue: String
 
     func make() -> WhatTheErrorCodeInput? {
-        let regex = try! NSRegularExpression(pattern: "Domain=(\\w+) Code=(\\d+)")
-        guard let match = regex.firstMatch(in: rawValue, range: NSRange(rawValue.startIndex..., in: rawValue)) else {
+        let pattern = #"Domain=([^\s]+).*Code=(-?\d+)"#
+        let regex = try! NSRegularExpression(pattern: pattern)
+        let nsInput = rawValue as NSString
+
+        guard let result = regex.firstMatch(in: rawValue, options: [], range: NSRange(location: 0, length: nsInput.length)) else { return nil }
+
+        guard
+            let domainRange = Range(result.range(at: 1), in: rawValue),
+            let errorCodeRange = Range(result.range(at: 2), in: rawValue) else {
             return nil
         }
 
-        let domainRange = Range(match.range(at: 1), in: rawValue)!
-        let codeRange = Range(match.range(at: 2), in: rawValue)!
         let domain = String(rawValue[domainRange])
+        guard let errorCode = Int(rawValue[errorCodeRange]) else { return nil }
 
-        guard let code = Int(rawValue[codeRange]) else {
-            return nil
-        }
-
-        return WhatTheErrorCodeInput(code: code, domain: domain)
+        return WhatTheErrorCodeInput(code: errorCode, domain: domain)
     }
 }
