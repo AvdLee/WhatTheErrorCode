@@ -1,192 +1,442 @@
 [{
-    "key": "NSCocoaErrorDomain",
-    "errors": [{
-            "key": "NSManagedObjectValidationError",
-            "code": 1550,
-            "description": "generic validation error"
-        }, {
-            "key": "NSValidationMultipleErrorsError",
-            "code": 1560,
-            "description": "generic message for error containing multiple validation errors"
-        }, {
-            "key": "NSValidationMissingMandatoryPropertyError",
-            "code": 1570,
-            "description": "non-optional property with a nil value"
-        }, {
-            "key": "NSValidationRelationshipLacksMinimumCountError",
-            "code": 1580,
-            "description": "to-many relationship with too few destination objects"
-        }, {
-            "key": "NSValidationRelationshipExceedsMaximumCountError",
-            "code": 1590,
-            "description": "bounded, to-many relationship with too many destination objects"
-        }, {
-            "key": "NSValidationRelationshipDeniedDeleteError",
-            "code": 1600,
-            "description": "some relationship with NSDeleteRuleDeny is non-empty"
-        }, {
-            "key": "NSValidationNumberTooLargeError",
-            "code": 1610,
-            "description": "some numerical value is too large"
-        }, {
-            "key": "NSValidationNumberTooSmallError",
-            "code": 1620,
-            "description": "some numerical value is too small"
-        }, {
-            "key": "NSValidationDateTooLateError",
-            "code": 1630,
-            "description": "some date value is too late"
-        }, {
-            "key": "NSValidationDateTooSoonError",
-            "code": 1640,
-            "description": "some date value is too soon"
-        },
-        {
-            "key": "NSValidationInvalidDateError",
-            "code": 1650,
-            "description": "some date value fails to match date pattern"
-        },
-        {
-            "key": "NSValidationStringTooLongError",
-            "code": 1660,
-            "description": "some string value is too long"
-        },
-        {
-            "key": "NSValidationStringTooShortError",
-            "code": 1670,
-            "description": "some string value is too short"
-        },
-        {
-            "key": "NSValidationStringPatternMatchingError",
-            "code": 1680,
-            "description": "some string value fails to match some pattern"
-        },
-        {
-            "key": "NSManagedObjectContextLockingError",
-            "code": 132000,
-            "description": "can't acquire a lock in a managed object context"
-        },
-        {
-            "key": "NSPersistentStoreCoordinatorLockingError",
-            "code": 132010,
-            "description": "can't acquire a lock in a persistent store coordinator"
-        },
-        {
-            "key": "NSManagedObjectReferentialIntegrityError",
-            "code": 133000,
-            "description": "attempt to fire a fault pointing to an object that does not exist (we can see the store, we can't see the object)"
-        },
-        {
-            "key": "NSManagedObjectExternalRelationshipError",
-            "code": 133010,
-            "description": "an object being saved has a relationship containing an object from another store"
-        },
-        {
-            "key": "NSManagedObjectMergeError",
-            "code": 133020,
-            "description": "merge policy failed - unable to complete merging"
-        },
-        {
-            "key": "NSPersistentStoreInvalidTypeError",
-            "code": 134000,
-            "description": "unknown persistent store type/format/version"
-        },
-        {
-            "key": "NSPersistentStoreTypeMismatchError",
-            "code": 134010,
-            "description": "returned by persistent store coordinator if a store is accessed that does not match the specified type"
-        },
-        {
-            "key": "NSPersistentStoreIncompatibleSchemaError",
-            "code": 134020,
-            "description": "store returned an error for save operation (database level errors ie missing table, no permissions)"
-        },
-        {
-            "key": "NSPersistentStoreSaveError",
-            "code": 134030,
-            "description": "unclassified save error - something we depend on returned an error"
-        },
-        {
-            "key": "NSPersistentStoreIncompleteSaveError",
-            "code": 134040,
-            "description": "one or more of the stores returned an error during save (stores/objects that failed will be in userInfo)"
-        },
-        {
-            "key": "NSPersistentStoreSaveConflictsError",
-            "code": 134050,
-            "description": "an unresolved merge conflict was encountered during a save.  userInfo has NSPersistentStoreSaveConflictsErrorKey"
-        },
-        {
-            "key": "NSCoreDataError",
-            "code": 134060,
-            "description": "general Core Data error"
-        },
-        {
-            "key": "NSPersistentStoreOperationError",
-            "code": 134070,
-            "description": "the persistent store operation failed"
-        },
-        {
-            "key": "NSPersistentStoreOpenError",
-            "code": 134080,
-            "description": "an error occurred while attempting to open the persistent store"
-        },
-        {
-            "key": "NSPersistentStoreTimeoutError",
-            "code": 134090,
-            "description": "failed to connect to the persistent store within the specified timeout (see NSPersistentStoreTimeoutOption)"
-        }, {
-            "key": "NSPersistentStoreUnsupportedRequestTypeError",
-            "code": 134091,
-            "description": "an NSPersistentStore subclass was passed an NSPersistentStoreRequest that it did not understand"
-        }, {
-            "key": "NSPersistentStoreIncompatibleVersionHashError",
-            "code": 134100,
-            "description": "entity version hashes incompatible with data model"
-        }, {
-            "key": "NSMigrationError",
-            "code": 134110,
-            "description": "general migration error"
-        }, {
-            "key": "NSMigrationCancelledError",
-            "code": 134120,
-            "description": "migration failed due to manual cancellation"
-        }, {
-            "key": "NSMigrationMissingSourceModelError",
-            "code": 134130,
-            "description": "migration failed due to missing source data model"
-        }, {
-            "key": "NSMigrationMissingMappingModelError",
-            "code": 134140,
-            "description": "migration failed due to missing mapping model"
-        }, {
-            "key": "NSMigrationManagerSourceStoreError",
-            "code": 134150,
-            "description": "migration failed due to a problem with the source data store"
-        }, {
-            "key": "NSMigrationManagerDestinationStoreError",
-            "code": 134160,
-            "description": "migration failed due to a problem with the destination data store"
-        }, {
-            "key": "NSEntityMigrationPolicyError",
-            "code": 134170,
-            "description": "migration failed during processing of the entity migration policy"
-        }, {
-            "key": "NSSQLiteError",
-            "code": 134180,
-            "description": "general SQLite error"
-        }, {
-            "key": "NSInferredMappingModelError",
-            "code": 134190,
-            "description": "inferred mapping model creation error"
-        }, {
-            "key": "NSExternalRecordImportError",
-            "code": 134200,
-            "description": "general error encountered while importing external records"
-        }, {
-            "key": "NSPersistentHistoryTokenExpiredError",
-            "code": 134301,
-            "description": "The history token passed to NSPersistentChangeRequest was invalid"
-        }
-    ]
-}]
+        "key": "NSURLErrorDomain",
+        "errors": [{
+                "key": "NSURLErrorAppTransportSecurityRequiresSecureConnection",
+                "description": "App Transport Security disallowed a connection because there is no secure network connection.",
+                "code": -1022
+            },
+            {
+                "key": "NSURLErrorBackgroundSessionInUseByAnotherProcess",
+                "description": "An app or app extension attempted to connect to a background session that is already connected to a process.",
+                "code": -996
+            },
+            {
+                "key": "NSURLErrorBackgroundSessionRequiresSharedContainer",
+                "description": "The shared container identifier of the URL session configuration is needed but hasn’t been set.",
+                "code": -995
+            },
+            {
+                "key": "NSURLErrorBackgroundSessionWasDisconnected",
+                "description": "The app is suspended or exits while a background data task is processing.",
+                "code": -997
+            },
+            {
+                "key": "NSURLErrorBadServerResponse",
+                "description": "The URL Loading System received bad data from the server.",
+                "code": -1011
+            },
+            {
+                "key": "NSURLErrorBadURL",
+                "description": "A malformed URL prevented a URL request from being initiated.",
+                "code": -1000
+            },
+            {
+                "key": "NSURLErrorCallIsActive",
+                "description": "A connection was attempted while a phone call was active on a network that doesn’t support simultaneous phone and data communication, such as EDGE or GPRS.",
+                "code": -1019
+            },
+            {
+                "key": "NSURLErrorCancelled",
+                "description": "An asynchronous load has been canceled.",
+                "code": -999
+            },
+            {
+                "key": "NSURLErrorCannotCloseFile",
+                "description": "A download task couldn’t close the downloaded file on disk.",
+                "code": -3002
+            },
+            {
+                "key": "NSURLErrorCannotConnectToHost",
+                "description": "An attempt to connect to a host failed.",
+                "code": -1004
+            },
+            {
+                "key": "NSURLErrorCannotCreateFile",
+                "description": "A download task couldn’t create the downloaded file on disk because of an I\/O failure.",
+                "code": -3000
+            },
+            {
+                "key": "NSURLErrorCannotDecodeContentData",
+                "description": "Content data received during a connection request had an unknown content encoding.",
+                "code": -1016
+            },
+            {
+                "key": "NSURLErrorCannotDecodeRawData",
+                "description": "Content data received during a connection request couldn’t be decoded for a known content encoding.",
+                "code": -1015
+            },
+            {
+                "key": "NSURLErrorCannotFindHost",
+                "description": "The host name for a URL couldn’t be resolved.",
+                "code": -1003
+            },
+            {
+                "key": "NSURLErrorCannotLoadFromNetwork",
+                "description": "A specific request to load an item only from the cache couldn't be satisfied.",
+                "code": -2000
+            },
+            {
+                "key": "NSURLErrorCannotMoveFile",
+                "description": "A downloaded file on disk couldn’t be moved.",
+                "code": -3005
+            },
+            {
+                "key": "NSURLErrorCannotOpenFile",
+                "description": "A downloaded file on disk couldn’t be opened.",
+                "code": -3001
+            },
+            {
+                "key": "NSURLErrorCannotParseResponse",
+                "description": "A response to a connection request couldn’t be parsed.",
+                "code": -1017
+            },
+            {
+                "key": "NSURLErrorCannotRemoveFile",
+                "description": "A downloaded file couldn’t be removed from disk.",
+                "code": -3004
+            },
+            {
+                "key": "NSURLErrorCannotWriteToFile",
+                "description": "A download task couldn’t write the file to disk.",
+                "code": -3003
+            },
+            {
+                "key": "NSURLErrorClientCertificateRejected",
+                "description": "A server certificate was rejected.",
+                "code": -1205
+            },
+            {
+                "key": "NSURLErrorClientCertificateRequired",
+                "description": "A client certificate was required to authenticate an SSL connection during a connection request.",
+                "code": -1206
+            },
+            {
+                "key": "NSURLErrorDataLengthExceedsMaximum",
+                "description": "The length of the resource data exceeded the maximum allowed.",
+                "code": -1103
+            },
+            {
+                "key": "NSURLErrorDataNotAllowed",
+                "description": "The cellular network disallowed a connection.",
+                "code": -1020
+            },
+            {
+                "key": "NSURLErrorDNSLookupFailed",
+                "description": "The host address couldn’t be found via DNS lookup.",
+                "code": -1006
+            },
+            {
+                "key": "NSURLErrorDownloadDecodingFailedMidStream",
+                "description": "A download task failed to decode an encoded file during the download.",
+                "code": -3006
+            },
+            {
+                "key": "NSURLErrorDownloadDecodingFailedToComplete",
+                "description": "A download task failed to decode an encoded file after downloading.",
+                "code": -3007
+            },
+            {
+                "key": "NSURLErrorFileDoesNotExist",
+                "description": "The specified file doesn’t exist.",
+                "code": -1100
+            },
+            {
+                "key": "NSURLErrorFileIsDirectory",
+                "description": "A request for an FTP file resulted in the server responding that the file is not a plain file, but a directory.",
+                "code": -1101
+            },
+            {
+                "key": "NSURLErrorFileOutsideSafeArea",
+                "description": "An internal file operation failed.",
+                "code": -1104
+            },
+            {
+                "key": "NSURLErrorHTTPTooManyRedirects",
+                "description": "A redirect loop was detected or the threshold for number of allowable redirects was exceeded (currently 16).",
+                "code": -1007
+            },
+            {
+                "key": "NSURLErrorInternationalRoamingOff",
+                "description": "The attempted connection required activating a data context while roaming, but international roaming is disabled.",
+                "code": -1018
+            },
+            {
+                "key": "NSURLErrorNetworkConnectionLost",
+                "description": "A client or server connection was severed in the middle of an in-progress load.",
+                "code": -1005
+            },
+            {
+                "key": "NSURLErrorNoPermissionsToReadFile",
+                "description": "A resource couldn’t be read because of insufficient permissions.",
+                "code": -1102
+            },
+            {
+                "key": "NSURLErrorNotConnectedToInternet",
+                "description": "A network resource was requested, but an internet connection has not been established and can’t be established automatically.",
+                "code": -1009
+            },
+            {
+                "key": "NSURLErrorRedirectToNonExistentLocation",
+                "description": "A redirect was specified by way of server response code, but the server didn’t accompany this code with a redirect URL.",
+                "code": -1010
+            },
+            {
+                "key": "NSURLErrorRequestBodyStreamExhausted",
+                "description": "A body stream was needed but the client did not provide one.",
+                "code": -1021
+            },
+            {
+                "key": "NSURLErrorResourceUnavailable",
+                "description": "A requested resource couldn’t be retrieved.",
+                "code": -1008
+            },
+            {
+                "key": "NSURLErrorSecureConnectionFailed",
+                "description": "An attempt to establish a secure connection failed for reasons that can’t be expressed more specifically.",
+                "code": -1200
+            },
+            {
+                "key": "NSURLErrorServerCertificateHasBadDate",
+                "description": "A server certificate is expired, or is not yet valid.",
+                "code": -1201
+            },
+            {
+                "key": "NSURLErrorServerCertificateHasUnknownRoot",
+                "description": "A server certificate wasn’t signed by any root server.",
+                "code": -1203
+            },
+            {
+                "key": "NSURLErrorServerCertificateNotYetValid",
+                "description": "A server certificate isn’t valid yet.",
+                "code": -1204
+            },
+            {
+                "key": "NSURLErrorServerCertificateUntrusted",
+                "description": "A server certificate was signed by a root server that isn’t trusted.",
+                "code": -1202
+            },
+            {
+                "key": "NSURLErrorTimedOut",
+                "description": "An asynchronous operation timed out.",
+                "code": -1001
+            },
+            {
+                "key": "NSURLErrorUnknown",
+                "description": "The URL Loading System encountered an error that it can’t interpret.",
+                "code": -1
+            },
+            {
+                "key": "NSURLErrorUnsupportedURL",
+                "description": "A properly formed URL couldn’t be handled by the framework.",
+                "code": -1002
+            },
+            {
+                "key": "NSURLErrorUserAuthenticationRequired",
+                "description": "Authentication was required to access a resource.",
+                "code": -1013
+            },
+            {
+                "key": "NSURLErrorUserCancelledAuthentication",
+                "description": "An asynchronous request for authentication has been canceled by the user.",
+                "code": -1012
+            },
+            {
+                "key": "NSURLErrorZeroByteResource",
+                "description": "A server reported that a URL has a non-zero content length, but terminated the network connection gracefully without sending any data.",
+                "code": -1014
+            }
+        ]
+    },
+    {
+        "key": "NSCocoaErrorDomain",
+        "errors": [{
+                "key": "NSManagedObjectValidationError",
+                "code": 1550,
+                "description": "generic validation error"
+            }, {
+                "key": "NSValidationMultipleErrorsError",
+                "code": 1560,
+                "description": "generic message for error containing multiple validation errors"
+            }, {
+                "key": "NSValidationMissingMandatoryPropertyError",
+                "code": 1570,
+                "description": "non-optional property with a nil value"
+            }, {
+                "key": "NSValidationRelationshipLacksMinimumCountError",
+                "code": 1580,
+                "description": "to-many relationship with too few destination objects"
+            }, {
+                "key": "NSValidationRelationshipExceedsMaximumCountError",
+                "code": 1590,
+                "description": "bounded, to-many relationship with too many destination objects"
+            }, {
+                "key": "NSValidationRelationshipDeniedDeleteError",
+                "code": 1600,
+                "description": "some relationship with NSDeleteRuleDeny is non-empty"
+            }, {
+                "key": "NSValidationNumberTooLargeError",
+                "code": 1610,
+                "description": "some numerical value is too large"
+            }, {
+                "key": "NSValidationNumberTooSmallError",
+                "code": 1620,
+                "description": "some numerical value is too small"
+            }, {
+                "key": "NSValidationDateTooLateError",
+                "code": 1630,
+                "description": "some date value is too late"
+            }, {
+                "key": "NSValidationDateTooSoonError",
+                "code": 1640,
+                "description": "some date value is too soon"
+            },
+            {
+                "key": "NSValidationInvalidDateError",
+                "code": 1650,
+                "description": "some date value fails to match date pattern"
+            },
+            {
+                "key": "NSValidationStringTooLongError",
+                "code": 1660,
+                "description": "some string value is too long"
+            },
+            {
+                "key": "NSValidationStringTooShortError",
+                "code": 1670,
+                "description": "some string value is too short"
+            },
+            {
+                "key": "NSValidationStringPatternMatchingError",
+                "code": 1680,
+                "description": "some string value fails to match some pattern"
+            },
+            {
+                "key": "NSManagedObjectContextLockingError",
+                "code": 132000,
+                "description": "can't acquire a lock in a managed object context"
+            },
+            {
+                "key": "NSPersistentStoreCoordinatorLockingError",
+                "code": 132010,
+                "description": "can't acquire a lock in a persistent store coordinator"
+            },
+            {
+                "key": "NSManagedObjectReferentialIntegrityError",
+                "code": 133000,
+                "description": "attempt to fire a fault pointing to an object that does not exist (we can see the store, we can't see the object)"
+            },
+            {
+                "key": "NSManagedObjectExternalRelationshipError",
+                "code": 133010,
+                "description": "an object being saved has a relationship containing an object from another store"
+            },
+            {
+                "key": "NSManagedObjectMergeError",
+                "code": 133020,
+                "description": "merge policy failed - unable to complete merging"
+            },
+            {
+                "key": "NSPersistentStoreInvalidTypeError",
+                "code": 134000,
+                "description": "unknown persistent store type/format/version"
+            },
+            {
+                "key": "NSPersistentStoreTypeMismatchError",
+                "code": 134010,
+                "description": "returned by persistent store coordinator if a store is accessed that does not match the specified type"
+            },
+            {
+                "key": "NSPersistentStoreIncompatibleSchemaError",
+                "code": 134020,
+                "description": "store returned an error for save operation (database level errors ie missing table, no permissions)"
+            },
+            {
+                "key": "NSPersistentStoreSaveError",
+                "code": 134030,
+                "description": "unclassified save error - something we depend on returned an error"
+            },
+            {
+                "key": "NSPersistentStoreIncompleteSaveError",
+                "code": 134040,
+                "description": "one or more of the stores returned an error during save (stores/objects that failed will be in userInfo)"
+            },
+            {
+                "key": "NSPersistentStoreSaveConflictsError",
+                "code": 134050,
+                "description": "an unresolved merge conflict was encountered during a save.  userInfo has NSPersistentStoreSaveConflictsErrorKey"
+            },
+            {
+                "key": "NSCoreDataError",
+                "code": 134060,
+                "description": "general Core Data error"
+            },
+            {
+                "key": "NSPersistentStoreOperationError",
+                "code": 134070,
+                "description": "the persistent store operation failed"
+            },
+            {
+                "key": "NSPersistentStoreOpenError",
+                "code": 134080,
+                "description": "an error occurred while attempting to open the persistent store"
+            },
+            {
+                "key": "NSPersistentStoreTimeoutError",
+                "code": 134090,
+                "description": "failed to connect to the persistent store within the specified timeout (see NSPersistentStoreTimeoutOption)"
+            }, {
+                "key": "NSPersistentStoreUnsupportedRequestTypeError",
+                "code": 134091,
+                "description": "an NSPersistentStore subclass was passed an NSPersistentStoreRequest that it did not understand"
+            }, {
+                "key": "NSPersistentStoreIncompatibleVersionHashError",
+                "code": 134100,
+                "description": "entity version hashes incompatible with data model"
+            }, {
+                "key": "NSMigrationError",
+                "code": 134110,
+                "description": "general migration error"
+            }, {
+                "key": "NSMigrationCancelledError",
+                "code": 134120,
+                "description": "migration failed due to manual cancellation"
+            }, {
+                "key": "NSMigrationMissingSourceModelError",
+                "code": 134130,
+                "description": "migration failed due to missing source data model"
+            }, {
+                "key": "NSMigrationMissingMappingModelError",
+                "code": 134140,
+                "description": "migration failed due to missing mapping model"
+            }, {
+                "key": "NSMigrationManagerSourceStoreError",
+                "code": 134150,
+                "description": "migration failed due to a problem with the source data store"
+            }, {
+                "key": "NSMigrationManagerDestinationStoreError",
+                "code": 134160,
+                "description": "migration failed due to a problem with the destination data store"
+            }, {
+                "key": "NSEntityMigrationPolicyError",
+                "code": 134170,
+                "description": "migration failed during processing of the entity migration policy"
+            }, {
+                "key": "NSSQLiteError",
+                "code": 134180,
+                "description": "general SQLite error"
+            }, {
+                "key": "NSInferredMappingModelError",
+                "code": 134190,
+                "description": "inferred mapping model creation error"
+            }, {
+                "key": "NSExternalRecordImportError",
+                "code": 134200,
+                "description": "general error encountered while importing external records"
+            }, {
+                "key": "NSPersistentHistoryTokenExpiredError",
+                "code": 134301,
+                "description": "The history token passed to NSPersistentChangeRequest was invalid"
+            }
+        ]
+    }
+]

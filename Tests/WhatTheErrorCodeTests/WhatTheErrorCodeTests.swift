@@ -14,6 +14,20 @@ final class WhatTheErrorCodeTests: XCTestCase {
         )
     }
 
+    func testNSURLErrorDomainExample() throws {
+        let expectedError = CocoaErrorDescription(
+            code: -1020,
+            key: "NSURLErrorDataNotAllowed",
+            description: "The cellular network disallowed a connection."
+        )
+        XCTAssertEqual(
+            WhatTheErrorCode.description(for: """
+            Error Domain=NSURLErrorDomain Code=-1020 "De momento, não é permitida a transmissão de dados." UserInfo={_kCFStreamErrorCodeKey=50
+            """),
+            expectedError
+        )
+    }
+
     func testValidateJSON() throws {
         let errorDomains = WhatTheErrorCode.errorDomains
         XCTAssertFalse(errorDomains.isEmpty)
