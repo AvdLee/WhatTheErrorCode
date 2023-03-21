@@ -29,8 +29,10 @@ NSPersistentStoreUnsupportedRequestTypeError	 = 134091, // an NSPersistentStore 
 "
 ```
 
-## I just want to use the app and keep it up to date with the latest errors
-Download [RocketSim](https://www.rocketsim.app) and use it from the Menu Bar. *(Coming in version 10.1)*
+## I want to use the app and keep it up to date with the latest errors
+Download [RocketSim](https://www.rocketsim.app) and use it from the Menu Bar. 
+
+![](Assets/rocketsim_developer_utilities.jpg)
 
 ## Author
 This library is created by [Antoine van der Lee](https://www.twitter.com/twannl) after [getting enough likes](https://twitter.com/twannl/status/1636429057934909442).
