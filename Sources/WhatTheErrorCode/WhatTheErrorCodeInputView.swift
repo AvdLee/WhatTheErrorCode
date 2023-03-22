@@ -52,6 +52,7 @@ public struct WhatTheErrorCodeInputView: View {
                 Text(error.description.localizedCapitalized)
             }
         }
+        .textSelection(.enabled)
     }
 
     private func updateResult() {
