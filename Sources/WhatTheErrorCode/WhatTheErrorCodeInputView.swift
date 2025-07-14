@@ -46,10 +46,11 @@ public struct WhatTheErrorCodeInputView: View {
             }.width(50)
 
             TableColumn("Key", value: \.key)
-                .width(340)
+                .width(min: 100, ideal: 150)
 
             TableColumn("Description") { error in
                 Text(error.description.localizedCapitalized)
+                    .lineLimit(nil)
             }
         }
         .textSelection(.enabled)
