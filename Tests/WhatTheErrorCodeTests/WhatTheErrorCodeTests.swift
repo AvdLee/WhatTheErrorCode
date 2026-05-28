@@ -64,6 +64,30 @@ final class WhatTheErrorCodeTests: XCTestCase {
         )
     }
 
+    func testSecurityOSStatusExample() throws {
+        let expectedError = CocoaErrorDescription(
+            code: -34018,
+            key: "errSecMissingEntitlement",
+            description: "A required entitlement isn't present."
+        )
+        XCTAssertEqual(
+            WhatTheErrorCode.description(for: "code=-34018"),
+            [expectedError]
+        )
+    }
+
+    func testSecurityDomainExample() throws {
+        let expectedError = CocoaErrorDescription(
+            code: -25300,
+            key: "errSecItemNotFound",
+            description: "The specified item could not be found in the keychain."
+        )
+        XCTAssertEqual(
+            WhatTheErrorCode.description(for: "Domain=Security Code=-25300"),
+            [expectedError]
+        )
+    }
+
     func testValidateJSON() throws {
         let errorDomains = WhatTheErrorCode.errorDomains
         XCTAssertFalse(errorDomains.isEmpty)
