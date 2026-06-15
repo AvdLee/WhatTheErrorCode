@@ -10,6 +10,9 @@ import SwiftUI
 public struct WhatTheErrorCodeInputView: View {
     @State var input: String = ""
     @State var result: [CocoaErrorDescription] = []
+    @State private var sortOrder: [KeyPathComparator<CocoaErrorDescription>] = [
+        .init(\.code, order: .forward)
+    ]
 
     public init() { }
 
@@ -40,15 +43,16 @@ public struct WhatTheErrorCodeInputView: View {
     }
 
     private var results: some View {
-        Table(result) {
-            TableColumn("Code") { error in
+        Table(result, sortOrder: $sortOrder) {
+            TableColumn("Code", value: \.code) { error in
                 Text(String(error.code))
-            }.width(50)
+            }
+            .width(50)
 
             TableColumn("Key", value: \.key)
                 .width(min: 100, ideal: 150)
 
-            TableColumn("Description") { error in
+            TableColumn("Description", value: \.description) { error in
                 Text(error.description.localizedCapitalized)
                     .lineLimit(nil)
             }
@@ -58,5 +62,6 @@ public struct WhatTheErrorCodeInputView: View {
 
     private func updateResult() {
         result = WhatTheErrorCode.description(for: input)
+        result.sort(using: sortOrder)
     }
 }
