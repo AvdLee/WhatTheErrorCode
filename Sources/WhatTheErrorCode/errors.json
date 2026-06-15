@@ -438,5 +438,145 @@
                 "description": "The history token passed to NSPersistentChangeRequest was invalid"
             }
         ]
+    },
+    {
+        "key": "Security",
+        "errors": [
+            {
+                "key": "errSecUnimplemented",
+                "description": "Function or operation not implemented.",
+                "code": -4
+            },
+            {
+                "key": "errSecParam",
+                "description": "One or more parameters passed to a function were not valid.",
+                "code": -50
+            },
+            {
+                "key": "errSecAllocate",
+                "description": "Failed to allocate memory.",
+                "code": -108
+            },
+            {
+                "key": "errSecUserCanceled",
+                "description": "User canceled the operation.",
+                "code": -128
+            },
+            {
+                "key": "errSecInternalComponent",
+                "description": "An internal security component failed.",
+                "code": -2070
+            },
+            {
+                "key": "errSecMissingEntitlement",
+                "description": "A required entitlement isn't present.",
+                "code": -34018
+            },
+            {
+                "key": "errSecNotAvailable",
+                "description": "No keychain is available. You may need to restart your computer.",
+                "code": -25291
+            },
+            {
+                "key": "errSecReadOnly",
+                "description": "This keychain cannot be modified.",
+                "code": -25292
+            },
+            {
+                "key": "errSecAuthFailed",
+                "description": "The user name or passphrase you entered is not correct.",
+                "code": -25293
+            },
+            {
+                "key": "errSecNoSuchKeychain",
+                "description": "The specified keychain could not be found.",
+                "code": -25294
+            },
+            {
+                "key": "errSecInvalidKeychain",
+                "description": "The specified keychain is not a valid keychain file.",
+                "code": -25295
+            },
+            {
+                "key": "errSecDuplicateKeychain",
+                "description": "A keychain with the same name already exists.",
+                "code": -25296
+            },
+            {
+                "key": "errSecDuplicateItem",
+                "description": "The specified item already exists in the keychain.",
+                "code": -25299
+            },
+            {
+                "key": "errSecItemNotFound",
+                "description": "The specified item could not be found in the keychain.",
+                "code": -25300
+            },
+            {
+                "key": "errSecNoSuchAttr",
+                "description": "The specified attribute does not exist.",
+                "code": -25303
+            },
+            {
+                "key": "errSecInvalidItemRef",
+                "description": "The specified item is no longer valid. It may have been deleted from the keychain.",
+                "code": -25304
+            },
+            {
+                "key": "errSecInvalidSearchRef",
+                "description": "Unable to search the current keychain.",
+                "code": -25305
+            },
+            {
+                "key": "errSecNoDefaultKeychain",
+                "description": "A default keychain could not be found.",
+                "code": -25307
+            },
+            {
+                "key": "errSecInteractionNotAllowed",
+                "description": "User interaction is not allowed.",
+                "code": -25308
+            },
+            {
+                "key": "errSecReadOnlyAttr",
+                "description": "The specified attribute could not be modified.",
+                "code": -25309
+            },
+            {
+                "key": "errSecWrongSecVersion",
+                "description": "This keychain was created by a different version of the system software and cannot be opened.",
+                "code": -25310
+            },
+            {
+                "key": "errSecKeySizeNotAllowed",
+                "description": "This item specifies a key size which is too large or too small.",
+                "code": -25311
+            },
+            {
+                "key": "errSecDecode",
+                "description": "Unable to decode the provided data.",
+                "code": -26275
+            },
+            {
+                "key": "errSecHostNameMismatch",
+                "description": "A host name mismatch has occurred.",
+                "code": -67602
+            },
+            {
+                "key": "errSecTrustSettingDeny",
+                "description": "The trust setting for this policy was set to Deny.",
+                "code": -67654
+            },
+            {
+                "key": "errSecCertificateExpired",
+                "description": "An expired certificate was detected.",
+                "code": -67818
+            },
+            {
+                "key": "errSecNotTrusted",
+                "description": "The certificate was not trusted.",
+                "code": -67843
+            }
+        ]
     }
 ]
